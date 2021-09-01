@@ -1,0 +1,153 @@
+@import '~antd/es/style/themes/default.less';
+.cont {
+  min-height: 100%;
+  // overflow-x: hidden !important;
+  :global {
+    // .ant-table-expanded-row-fixed,
+    // .ant-table-body {
+    //   overflow: auto !important;
+    // }
+
+    /* 减小表头与排序按钮之间的距离 */
+    .ant-table-column-sorters{
+      justify-content: left !important;
+    }
+    .ant-table-column-title {
+      flex: 0 0 auto;
+    }
+    
+
+    .ant-table-row-expand-icon-expanded,
+    .ant-table-row-expand-icon-collapsed {
+      color: @primary-color !important;
+      border-color: @primary-color !important;
+    }
+    .ant-table-thead > tr > th {
+      background: @component-background !important;
+      border-right: 0;
+    }
+    .ant-table-thead > tr > th::before {
+      width: 0 !important;
+    }
+    .ant-spin-nested-loading {
+      background: @component-background;
+    }
+    .ant-pagination {
+      margin: 10px 0;
+      padding: 6px 16px;
+      border-top: 1px solid @border-color-base;
+    }
+    .opcolumn {
+      padding: 0 !important;
+      border-right: 1px solid @border-color-base;
+      border-left: 1px solid @border-color-base;
+    }
+    .opcolumn0 {
+      padding: 0 !important;
+      border-right: 1px solid @border-color-base;
+      border-left: 0;
+    }
+    .ant-table-expanded-row-fixed .opcolumn,
+    .ant-table-expanded-row-fixed .opcolumn0 {
+      border-right: 0 !important;
+    }
+    .ant-pagination-item-active {
+      background-color: @primary-color;
+    }
+    .ant-pagination-item-active:focus-visible a,
+    .ant-pagination-item-active:hover a {
+      color: @component-background !important;
+    }
+    .ant-pagination-item-active a {
+      color: @component-background !important;
+    }
+    .ant-drawer-body {
+      padding: 0 !important;
+      overflow: hidden !important;
+      line-height: 50px !important;
+    }
+    //滚动条整体样式
+    .ant-table-container > div::-webkit-scrollbar {
+      width: 5px; //高宽分别对应横竖滚动条的尺寸
+      height: 5px;
+    }
+    //滚动条里面小方块
+    .ant-table-container > div::-webkit-scrollbar-thumb {
+      background: @border-color-split;
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+.contTable {
+  min-height: 100%;
+}
+.moreBtns {
+  padding-bottom: 0 !important;
+  :global {
+    .ant-dropdown-menu-item:hover {
+      background-color: @primary-Light-color;
+    }
+  }
+}
+.moreBtnitem {
+  min-width: 130px;
+  padding-left: 20px !important;
+  border-bottom: 1px solid #ececec !important;
+}
+.moreBtnTitle {
+  color: @text-color;
+  font-size: 1.8vw;
+}
+
+// TableTool的样式
+.tableTool {
+  width: 100%;
+  line-height: 50px;
+  background: @component-background;
+  border-bottom: 1px solid @border-color-base;
+}
+.tableToolRow {
+  padding: 0 15px;
+}
+.tableToolSelect {
+  width: 8vw;
+}
+.tableToolSerchSelect {
+  width: 10vw;
+}
+.tableToolNotBorCircleBtn {
+  border: 0 !important;
+  box-shadow: 0 0 0 !important;
+}
+.colAginRight {
+  text-align: right !important;
+}
+.tableToolDivider {
+  height: 54% !important;
+  border-left: 1.5px solid @border-color-base;
+}
+.drawerhide {
+  display: none !important;
+}
+.drawershow {
+  display: block !important;
+}
+.tableToolSerchMode {
+  margin-top: 5px;
+  padding: 0 15px;
+}
+.tableToolSerchInput {
+  width: 25vw !important;
+}
+//checkbox 选中条数的展示
+.table_select_total {
+  position: fixed;
+  z-index: 9999;
+}
+.book_tabale_emptyCont {
+  height: 55vh;
+}
+.book_tabale_emptyCont_title {
+  font-size: 17px;
+}
